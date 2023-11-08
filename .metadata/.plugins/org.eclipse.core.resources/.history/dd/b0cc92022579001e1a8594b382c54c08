@@ -1,0 +1,12 @@
+package switchtest;
+
+public class switchTest1 {
+
+	public static void main(String[] args) {
+		switch(변수) {
+			case : 비교하고싶은 값:
+				실행문;
+				break;
+	}
+
+}

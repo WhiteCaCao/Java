@@ -1,0 +1,39 @@
+package practice2;
+
+public class Practice2 {
+
+	public static void main(String[] args) {
+		// <1. 구구단을 짝수단만 출력하도록 프로그램을 만들어 보세요 사용 . (continue )>
+		// 2 4 6 8 10 12 14 16 18 20 ...
+		// 1 3 5 7 9 11 13 15 17 19 ... --continue 되게 2로 나누었을때 나머지가 1인 수들
+		
+		for (int i = 2; i <= 80; i++) {
+			if (i % 2 == 1) {
+				continue;
+			}
+			System.out.println(i);
+		}
+
+		// <2. 구구단을 단보다 곱하는 수가 작거나 같은 경우까지만 출력하는 프로그램
+//		을 만들어 보세요 사용 . (break )>
+//		1, 2*1 2*2 , 3*1 3*2 3*3 , 4*1 4*2 4*3 4*4 ... 
+//		i>=j, i=2~9, j=1~9 
+//		i<j 일때 break or i>=j 이용
+		for(int i=2; i<=9; i++) {
+			for(int j=1; j<=9; j++) {
+				if(i>=j) {
+					break;
+				} System.out.println(i+"*"+j+"="+i*j);
+			} 
+		}
+		
+
+//		3. 반복문을 사용하여 다음 모양을 출력하는 프로그램을 만들어 보세요.
+//		*
+//		**
+//		***
+//		****
+//		*****
+//		배열은 0부터 시작, 늘어나는줄 i(i<5) , 줄 마다 늘어나는 갯수 j(j=0, j<=i)
+	}
+}
