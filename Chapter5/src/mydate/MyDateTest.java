@@ -2,8 +2,8 @@ package mydate;
 
 public class MyDateTest {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[]args) {
+		
 		// MyDate 클래스 완성하기
 		// year, month, day 변수를 private로 선언
 		// 각 변수의 get,set 메서드를 public으로 작성
@@ -16,8 +16,10 @@ public class MyDateTest {
 		MyDate date2 = new MyDate(2006,2,10);
 		System.out.println(date2.isValid());
 		//유효한 날짜 입니다.
-		
-		
+		date2 = new MyDate(2001,13,10);
+		System.out.println(date2.isValid());
+		date2 = new MyDate(2001,12,32);
+		System.out.println(date2.isValid());
 	}
 
 }
